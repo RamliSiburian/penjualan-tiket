@@ -19,7 +19,7 @@ require "../Config/db.php";
                 <div class="head d-flex justify-content-between align-items-center">
                     <p class="fs-1 fw-bold text">MY KONSER</p>
                     <div class="login">
-                        <a class="btnlogin fw-bold" href="./Auth/Login.php">Login</a>
+                        <a class="btnlogin fw-bold text-black fs-4" href="../index.php">Home</a>
                     </div>
                 </div>
             </div>

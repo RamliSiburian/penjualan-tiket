@@ -9,7 +9,7 @@ if (isset($_GET['id_buyer'])) {
     $update = mysqli_query($conn, "UPDATE ticketsell SET status='$newstatus' WHERE id_buyer='$id_buyer' ");
     if ($update) {
 ?>
-        <script>
+        <script>    
             alert("Check-In berhasil")
             window.location = "./checkin.php"
         </script>
