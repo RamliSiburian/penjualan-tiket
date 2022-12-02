@@ -1,0 +1,24 @@
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+.home .header {
+    height: 150px;
+    background-color: #F0DBDB;
+    line-height: 150px;
+}
+
+.home .btnlogin {
+    width: 100px;
+    background-color: #DBA39A;
+    padding: 10px 30px;
+    border-radius: 7px;
+    color: #000;
+}
+
+
+/* Order */
+.order form {
+    margin-top: 50px;
+}
