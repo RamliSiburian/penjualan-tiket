@@ -12,17 +12,18 @@ $no = 1;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Konser</title>
+    <link rel="stylesheet" href="../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="home">
-        <div class="header bg-info">
+        <div class="header">
             <div class="container">
                 <div class="head d-flex justify-content-between align-items-center">
                     <h1>MY KONSER</h1>
                     <div class="login">
-                        <a href="#" class="me-3">Check-In</a>
+                        <a href="./checkin.php" class="me-3 text-black">Check-In</a>
                         <a class="btn btn-primary" href="../index.php">Logout</a>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ $no = 1;
                 </div>
                 <hr>
                 <table class="table table-bordered table-hover table-striped mt-3">
-                    <tr>
+                    <tr class="text-center">
                         <th>No</th>
                         <th>Gambar</th>
                         <th>Judul</th>
@@ -58,8 +59,8 @@ $no = 1;
                             <td><?= $film['start']; ?></td>
                             <td><?= $film['end']; ?></td>
                             <td><?= $film['price']; ?></td>
-                            <td>edit</td>
-                            <td>hapus</td>
+                            <td><a href="" class="btn btn-outline-warning text-black w-100"> Edit</a></td>
+                            <td><a href="./hapus.php?id=<?= $film['id'] ?>" class="btn btn-outline-danger text-black w-100 "> hapus</a></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>

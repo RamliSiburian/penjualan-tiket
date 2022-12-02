@@ -8,13 +8,27 @@ require "../Config/db.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Movie</title>
+    <link rel="stylesheet" href="../Style//style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="login">
-        <div class="container">
-            <form action="" method="post">
+        <div class="header">
+            <div class="container">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <p class="fs-1 fw-bold text">MY KONSER</p>
+                    <div class="login">
+                        <a class="btnlogin fw-bold" href="./Auth/Login.php">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container  d-flex justify-content-center mt-5">
+            <form action="" method="post" class="w-50">
+                <p class="fs-1 fw-bold">Form Login</p>
                 <div class="form-group">
                     <label for="username" class="form-label fw-bold"> Username </label>
                     <input type="text" name="username" id="username" class="form-control" placeholder="username">
@@ -24,7 +38,15 @@ require "../Config/db.php";
                     <input type="password" name="password" id="password" class="form-control" placeholder="password">
                 </div>
 
-                <button type="submit" name="login">Login</button>
+                <div class="login d-flex justify-content-end">
+                    <button type="submit" name="login" class="btn btn-primary mt-3 text-black fw-bold" style="width:150px ;">Login</button>
+                </div>
+
+                <div class="info bg-info mt-5 p-1 rounded">
+                    username : admin
+                    <br>
+                    password : admin
+                </div>
             </form>
         </div>
     </div>

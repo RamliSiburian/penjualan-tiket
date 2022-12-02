@@ -4,10 +4,14 @@ a:link {
 }
 
 .home .header,
-.order .header {
+.order .header,
+.login .header,
+.add-film .header,
+.oreder-ticket .header {
     height: 120px;
     background-color: #F0DBDB;
     line-height: 120px;
+    box-shadow: 0px 3px 5px #bbb;
 }
 
 .home .btnlogin {

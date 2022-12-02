@@ -5,17 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add Film</title>
+    <link rel="stylesheet" href="../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="add-film">
-        <div class="container">
-            <div class="back mt-5">
-                <a href="admin.php">Kembali</a>
+        <div class="header">
+            <div class="container">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <h1>MY KONSER</h1>
+                    <div class="login">
+                        <a class="btn btn-primary" href="../index.php">Logout</a>
+                    </div>
+                </div>
             </div>
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="form-group ,b-3">
+        </div>
+
+        <div class="container d-flex justify-content-center mt-5">
+            <form action="" method="post" enctype="multipart/form-data" class="w-50 mb-5">
+                <a href="admin.php" class="text-danger fw-bold fs-4 ">Kembali</a>
+                <hr class="m-0">
+                <div class="form-group mb-3 mt-3">
                     <label for="image" class="form-label fw-bold"> image </label>
                     <input type="file" name="image" id="image" class="form-control" placeholder="username">
                 </div>
@@ -44,7 +55,9 @@
                     <input type="text" name="price" id="price" class="form-control" placeholder="harga">
                 </div>
 
-                <button type="submit" name="simpan">Simpan</button>
+                <div class="simpan d-flex justify-content-end">
+                    <button type="submit" name="simpan" class="btn btn-primary" style="width: 150px;">Simpan</button>
+                </div>
             </form>
         </div>
     </div>
