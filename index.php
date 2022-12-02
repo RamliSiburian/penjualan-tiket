@@ -9,7 +9,7 @@ $getMovie = mysqli_query($conn, "SELECT * FROM movies");
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Movie</title>
+    <title>My Konser</title>
     <link rel="stylesheet" href="./Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
@@ -19,7 +19,7 @@ $getMovie = mysqli_query($conn, "SELECT * FROM movies");
         <div class="header">
             <div class="container">
                 <div class="head d-flex justify-content-between align-items-center">
-                    <p class="fs-1 fw-bold text">MY MOVIE</p>
+                    <p class="fs-1 fw-bold text">MY KONSER</p>
                     <div class="login">
                         <a class="btnlogin fw-bold" href="./Auth/Login.php">Login</a>
                     </div>

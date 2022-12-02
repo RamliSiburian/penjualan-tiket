@@ -3,10 +3,11 @@ a:link {
     color: #000;
 }
 
-.home .header {
-    height: 150px;
+.home .header,
+.order .header {
+    height: 120px;
     background-color: #F0DBDB;
-    line-height: 150px;
+    line-height: 120px;
 }
 
 .home .btnlogin {
@@ -21,4 +22,10 @@ a:link {
 /* Order */
 .order form {
     margin-top: 50px;
+}
+
+/* ticket */
+.ticket .card {
+    margin-top: 150px;
+    background-color: #FEFCF3;
 }

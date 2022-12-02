@@ -11,7 +11,7 @@ $no = 1;
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Movie</title>
+    <title>My Konser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
@@ -20,7 +20,7 @@ $no = 1;
         <div class="header bg-info">
             <div class="container">
                 <div class="head d-flex justify-content-between align-items-center">
-                    <h1>MY MOVIE</h1>
+                    <h1>MY KONSER</h1>
                     <div class="login">
                         <a href="#" class="me-3">Check-In</a>
                         <a class="btn btn-primary" href="../index.php">Logout</a>

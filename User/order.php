@@ -24,9 +24,23 @@ if (isset($_GET['id'])) {
 <body>
 
     <div class="order">
+        <div class="header">
+            <div class="container">
+                <div class="head ">
+                    <p class="fs-1 fw-bold text">MY KONSER</p>
+
+                </div>
+            </div>
+        </div>
+
+
         <div class="container d-flex justify-content-center">
-            <form action="" method="post" class="w-50">
-                <p class="fs-1 fw-bold">Form Order Tiket</p>
+            <form action="" method="post" class="w-50 mb-5">
+                <div class="head d-flex gap-3 align-items-center">
+                    <a href="../index.php" class="fs-4 text-danger fw-bold">Kembali </a>
+                    <p class="fs-2 fw-bold m-0"> Form Order Tiket</p>
+                </div>
+                <hr class="m-0 mb-4">
                 <div class="form-group mb-3">
                     <label for="name" class="form-label fw-bold"> Nama </label>
                     <input type="text" name="name" id="name" class="form-control" placeholder="nama">
@@ -36,7 +50,7 @@ if (isset($_GET['id'])) {
                     <input type="text" name="address" id="address" class="form-control" placeholder="alamat">
                 </div>
                 <div class="form-group mb-3">
-                    <label for="title" class="form-label fw-bold"> Judul Film </label>
+                    <label for="title" class="form-label fw-bold"> Judul Konser </label>
                     <input type="text" name="title" id="title" class="form-control" value="<?= $result['title'];  ?>" disabled>
                 </div>
                 <div class="form-group mb-3">
@@ -48,7 +62,9 @@ if (isset($_GET['id'])) {
                     <input type="text" name="price" id="price" class="form-control" value="<?= $result['price']  ?>" disabled>
                 </div>
 
-                <button type="submit" name="beli" class="btn btn-primary"> Beli</button>
+                <div class="beli d-flex justify-content-end">
+                    <button type="submit" name="beli" class="btn btn-primary fw-bold" style="width: 150px;"> Beli</button>
+                </div>
             </form>
         </div>
     </div>
