@@ -81,6 +81,7 @@ if (isset($_POST['beli'])) {
     $title = $result['title'];
     $schedule = $result['start'] . " - " . $result['end'];
     $price = $result['price'];
+    $status = "belum check-in";
 
     $getTicket = mysqli_query($conn, "SELECT * FROM ticketsell WHERE name='$name' && title='$title' && schedule='$schedule' ");
     $tickets = mysqli_num_rows($getTicket);
@@ -92,7 +93,7 @@ if (isset($_POST['beli'])) {
         </script>
         <?php
     } else {
-        $beli = mysqli_query($conn, "INSERT INTO ticketsell VALUES('', '$id_buyer', '$name', '$address', '$title', '$schedule', '$price' ) ");
+        $beli = mysqli_query($conn, "INSERT INTO ticketsell VALUES('', '$id_buyer', '$name', '$address', '$title', '$schedule', '$price', '$status' ) ");
         if ($beli) {
         ?>
             <script>

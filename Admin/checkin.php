@@ -2,6 +2,7 @@
 require "../Config/db.php";
 
 $getOrder = mysqli_query($conn, "SELECT * FROM ticketsell");
+$no = 1;
 
 ?>
 <!doctype html>
@@ -29,7 +30,37 @@ $getOrder = mysqli_query($conn, "SELECT * FROM ticketsell");
         </div>
 
         <div class="container">
-            
+            <p class="fs-2 fw-bold mt-3">Halaman Check-In Tiket</p>
+            <hr>
+            <table class="table table-striped table-hover table-primary">
+                <tr>
+                    <th>No</th>
+                    <th>Id Tiket</th>
+                    <th>Nama</th>
+                    <th>jadwal Konser</th>
+                    <th>Status</th>
+                    <th>Opsi</th>
+                </tr>
+                <?php foreach ($getOrder as $order) : ?>
+                    <tr>
+                        <td><?= $no++; ?></td>
+                        <td><?= $order['id_buyer']; ?></td>
+                        <td><?= $order['name']; ?></td>
+                        <td><?= $order['schedule']; ?></td>
+                        <?php if ($order['status'] == "belum check-in") : ?>
+                            <td class="text-danger"><?= $order['status']; ?></td>
+                        <?php elseif ($order['status'] == "sudah check-in") :  ?>
+                            <td class="text-success"><?= $order['status']; ?></td>
+                        <?php endif; ?>
+                        <?php if ($order['status'] == "belum check-in") : ?>
+                            <td class="text-center"><a href="edit_checkin.php?id_buyer=<?= $order['id_buyer']; ?>" class="btn btn-success text-white">Check-in</a></td>
+                        <?php elseif ($order['status'] == "sudah check-in") :  ?>
+                            <td></td>
+                        <?php endif; ?>
+
+                    </tr>
+                <?php endforeach; ?>
+            </table>
         </div>
     </div>
 
